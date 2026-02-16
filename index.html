@@ -9,28 +9,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header
-      class="bg-white w-full px-30 py-5 flex justify-between items-center m-auto fixed top-0 z-10"
-    >
-      <div class="flex items-center">
-        <span class="pr-2 text-2xl text-blue-700"><i class="fa fa-graduation-cap"></i></span>
-        <h1 class="text-1xl">Eldren's Academy</h1>
-      </div>
-      <div class="">
-        <nav class="space-x-5 hidden lg:block">
-        <a href="#">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./programs.html">Programs</a>
-        <a href="./admissions.html">Admissions</a>
-        <a href="./contact.html">Contact</a>
-        <a href=""
-          ><button class="border bg-blue-700 text-white px-4 py-2 rounded-full">
-            Apply now
-          </button></a>
-         </nav>
-          <button class="block lg:hidden"><i class="fa fa-bars"></i></button>
-      </div>
+     <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+      
+            <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900">Eldren's Academy</span>
+                </div>
+      <nav class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="./about.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="./programs.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Programs</a>
+                    <a href="./admissions.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Admissions</a>
+                    <a href="./contact.html" class="text-blue-600 hover:text-blue-700 font-medium transition-colors">Contact</a>
+                </nav>
+
+              
+                <button class="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Apply Now
+                </button>
+
+          
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg id="hamburgerIcon" class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="closeIcon" class="w-6 h-6 text-gray-900 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            
+            <div id="mobileMenu" class="hidden md:hidden pb-6 pt-2">
+                <nav class="flex flex-col gap-4">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">Home</a>
+                    <a href="./about.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">About</a>
+                    <a href="./programs.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">Programs</a>
+                    <a href="./admissions.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">Admissions</a>
+                    <a href="./contact.html" class="text-blue-600 hover:text-blue-700 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors">Contact</a>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors mt-2">
+                        Apply Now
+                    </button>
+                </nav>
+            </div>
+        </div>
     </header>
+
+
     <section class="bg-blue-700 m-auto py-10 w-full relative border-b border-b-blue-200 border-0.1">
       <div class="p-8 py-15 flex flex-col flex-nowrap sm:p-30 max-w-4xl">
         <h1
@@ -85,21 +115,21 @@
         </div>
         <div class="flex flex-col items-center justify-evenly m-auto md:flex-row pb-10 w-full">
         <div class="w-10/12 h-auto bg-white pb-10 rounded-2xl 2xl:w-120 2xl:h-100 lg:w-80 lg:h-120 xl:w-90 xl:h-120 md:w-60 md:h-120 mb-10 mt-10 hover:shadow-lg">
-          <div class="h-50 bg-gradient-to-br from-blue-400 to-blue-600 rounded-t-2xl">
+          <div class="h-50 bg-linear-to-br from-blue-400 to-blue-600 rounded-t-2xl">
         </div>
          <h2 class="pl-5 pt-10 text-3xl">Academic Excellence</h2>
          <p class="pl-5 pt-4 pb-4">Rigorous curriculum with 25+ AP courses and honors programs designed to challenge and inspire.</p>
          <span class="pl-5 text-blue-600 hover:text-blue-700"><a href="">Learn More → </a></span>
         </div>
         <div class="w-10/12 h-auto bg-white pb-10 rounded-2xl 2xl:w-120 2xl:h-100 lg:w-80 lg:h-120 xl:w-90 xl:h-120 md:w-60 md:h-120 mb-10 mt-10 hover:shadow-lg">
-          <div class="h-50 bg-gradient-to-br from-blue-400 to-blue-600 rounded-t-2xl">
+          <div class="h-50 bg-linear-to-br from-blue-400 to-blue-600 rounded-t-2xl">
         </div>
          <h2 class="pl-5 pt-10 text-3xl">Student Life</h2>
          <p class="pl-5 pt-4 pb-4">Over 40 clubs and organizations where students can explore passions and build lifelong friendships.</p>
          <span class="pl-5 text-blue-600 hover:text-blue-700"><a href="">Learn More → </a></span>
         </div>
          <div class="w-10/12 h-auto bg-white pb-10 rounded-2xl 2xl:w-120 2xl:h-100 lg:w-80 lg:h-120 xl:w-90 xl:h-120 md:w-60 md:h-120 mt-10 mb-10 hover:shadow-lg">
-          <div class="h-50 bg-gradient-to-br from-blue-400 to-blue-600 rounded-t-2xl">
+          <div class="h-50 bg-linear-to-br from-blue-400 to-blue-600 rounded-t-2xl">
         </div>
          <h2 class="pl-5 pt-10 text-3xl">Athletics</h2>
          <p class="pl-5 pt-4 pb-4">Competitive sports programs with state-of-the-art facilities and championship-winning teams.</p>
@@ -206,5 +236,6 @@
 
         </div>
     </footer>
+  <script src="./src/js/main.js"></script>
   </body>
 </html>
